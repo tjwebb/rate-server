@@ -2,12 +2,17 @@
   "use strict";
 
   var profiles = {
-    'pitd': require('./pitd')
+    'pitd': require('./pitd'),
+    'cnwy': require('./cnwy'),
+    'saia': require('./saia'),
+    'exla': require('./exla'),
+    'abfs': require('./abfs')
   };
   exports.use = function (scac) {
-    console.log(scac);
     var profile = profiles[(scac || "").toLowerCase()];
-    if (!profile) throw "SCAC code ["+ scac +"] not supported.";
+    if (!profile) throw JSON.stringify({
+      error: "SCAC code ["+ scac +"] not supported."
+    });
 
     return profile;
   };
