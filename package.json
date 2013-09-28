@@ -1,0 +1,26 @@
+{
+  "name": "logistify-rate-server",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "3.3.x",
+    "nodemon": "~0.7.10",
+    "cli-color": "~0.2.2",
+    "underscore": "~1.5.1",
+    "jshint": "~2.1.10"
+  },
+  "devDependencies": {
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.3.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/logistify/rate-server"
+  },
+  "author": "Travis Webb",
+  "license": "Apache",
+  "bugs": {
+    "url": "https://github.com/logistify/rate-server/issues"
+  }
+}
