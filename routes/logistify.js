@@ -25,7 +25,7 @@
     var carrier = profiles.use(scac);
 
     carrier.on('quoteReceived', function (quote) {
-      res.json({ scac: scac, quote: quote });
+      res.json({ scac: scac, quote: parseFloat(parseFloat(quote).toFixed(2)) });
     });
     carrier.getQuote(req.query);
   };
