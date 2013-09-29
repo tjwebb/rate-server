@@ -11,7 +11,7 @@
   };
 
   module.exports.getQuote = function (query) {
-    var quote = Math.floor((Math.random() * 50) + 10);
+    var quote = ((Math.random() * 50) + 100).toFixed(2);
 
     module.exports.emit('quoteReceived', quote);
   };
